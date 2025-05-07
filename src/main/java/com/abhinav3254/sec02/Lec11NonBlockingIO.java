@@ -15,7 +15,7 @@ public class Lec11NonBlockingIO {
 
         logger.info("starting...");
 
-        for (int i = 1; i < 6; i++) {
+        for (int i = 1; i < 100; i++) {
             client.getProductName(i)
                     .subscribe(Util.subscriber());
         }
